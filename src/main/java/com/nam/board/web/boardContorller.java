@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -25,16 +26,16 @@ public class boardContorller {
 	private static final Logger log = LoggerFactory.getLogger(boardContorller.class);
 	
 	/* main.jsp */
-	@RequestMapping(value = "/main.do", method= RequestMethod.GET)
+	@RequestMapping(value = "/main", method= RequestMethod.GET)
 	public String mainPage() {
 		
-		return "main.do";
+		return "main";
 	}
 	
 	/* 공지사항 리스트 */
 	
 	/* 자유 게시판 리스트 */
-	@RequestMapping(value="/freeboard.do")
+	@RequestMapping(value="/freeboard")
 	public ModelAndView freeboardList(ModelAndView mv) {
 		
 		return mv;
@@ -43,7 +44,7 @@ public class boardContorller {
 	/* 공지사항 상세보기 */
 	
 	/* 자유게시판 상세보기 */
-	@RequestMapping(value = "/freeboarddeatil.do")
+	@RequestMapping(value = "/freeboarddeatil")
 	public ModelAndView freeboardDetail(ModelAndView mv) {
 		
 		
@@ -53,7 +54,7 @@ public class boardContorller {
 	/* 공지사항 작성 */
 	
 	/* 자유 게시글 작성 */
-	@RequestMapping(value = "/freeboardinsert.do")
+	@RequestMapping(value = "/freeboardinsert")
 	public ModelAndView freeboardInsert(ModelAndView mv) {
 		
 		
@@ -61,7 +62,7 @@ public class boardContorller {
 	}
 	
 	/* 자유 게시글 수정 */
-	@RequestMapping(value = "/freeboardupdate.do")
+	@RequestMapping(value = "/freeboardupdate")
 	public ModelAndView freeboardUpdate(ModelAndView mv) {
 		
 		
@@ -69,7 +70,7 @@ public class boardContorller {
 	}
 	
 	/* 자유게시글 삭제 */
-	@RequestMapping(value = "/freeboarddelete.do")
+	@RequestMapping(value = "/freeboarddelete")
 	public ModelAndView freeboardDelete(ModelAndView mv) {
 		
 		
