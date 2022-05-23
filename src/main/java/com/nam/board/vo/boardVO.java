@@ -1,4 +1,4 @@
-package com.nam.noticeBoard.vo;
+package com.nam.board.vo;
 
 import java.util.Date;
 

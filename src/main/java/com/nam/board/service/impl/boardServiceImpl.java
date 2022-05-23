@@ -1,9 +1,9 @@
-package com.nam.noticeBoard.service.impl;
+package com.nam.board.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.nam.noticeBoard.mapper.boardMapper;
-import com.nam.noticeBoard.service.boardService;
+import com.nam.board.mapper.boardMapper;
+import com.nam.board.service.boardService;
 
 /***/
 public class boardServiceImpl implements boardService{

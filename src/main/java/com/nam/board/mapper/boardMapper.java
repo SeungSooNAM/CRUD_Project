@@ -1,4 +1,4 @@
-package com.nam.noticeBoard.mapper;
+package com.nam.board.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 
