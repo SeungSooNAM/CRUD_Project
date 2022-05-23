@@ -10,6 +10,7 @@
 <script type="text/javascript" src="js/board.js"></script>
 </head>
 <body>
-
+	<h1>Hello world</h1>
+	<div id="area"></div>
 </body>
 </html>
