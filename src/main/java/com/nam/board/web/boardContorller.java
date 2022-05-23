@@ -21,7 +21,7 @@ public class boardContorller {
 	private boardService boardService;
 	
 	/* main.jsp */
-	@RequestMapping(value = "main.do")
+	@RequestMapping(value = "/main.do")
 	public String mainPage() {
 		
 		return "main.do";
@@ -30,7 +30,7 @@ public class boardContorller {
 	/* 공지사항 리스트 */
 	
 	/* 자유 게시판 리스트 */
-	@RequestMapping(value="freeboard.do")
+	@RequestMapping(value="/freeboard.do")
 	public ModelAndView freeboardList(ModelAndView mv) {
 		
 		return mv;
@@ -39,7 +39,7 @@ public class boardContorller {
 	/* 공지사항 상세보기 */
 	
 	/* 자유게시판 상세보기 */
-	@RequestMapping(value = "freeboarddeatil.do")
+	@RequestMapping(value = "/freeboarddeatil.do")
 	public ModelAndView freeboardDetail(ModelAndView mv) {
 		
 		
@@ -48,13 +48,27 @@ public class boardContorller {
 	
 	/* 공지사항 작성 */
 	
-	/* 자유 게시판 작성 */
-	@RequestMapping(value = "freeboardInsert.do")
+	/* 자유 게시글 작성 */
+	@RequestMapping(value = "/freeboardinsert.do")
 	public ModelAndView freeboardInsert(ModelAndView mv) {
 		
 		
 		return mv;
 	}
 	
+	/* 자유 게시글 수정 */
+	@RequestMapping(value = "/freeboardupdate.do")
+	public ModelAndView freeboardUpdate(ModelAndView mv) {
+		
+		
+		return mv;
+	}
 	
+	/* 자유게시글 삭제 */
+	@RequestMapping(value = "/freeboarddelete.do")
+	public ModelAndView freeboardDelete(ModelAndView mv) {
+		
+		
+		return mv;
+	}
 }
