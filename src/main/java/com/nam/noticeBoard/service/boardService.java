@@ -5,6 +5,6 @@ import org.springframework.stereotype.Service;
 import com.nam.noticeBoard.mapper.noticeBoardMapper;
 
 @Service
-public interface noticeBoardService {
+public interface boardService {
 	
 }

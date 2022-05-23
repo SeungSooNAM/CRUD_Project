@@ -2,7 +2,7 @@ package com.nam.noticeBoard.vo;
 
 import java.util.Date;
 
-public class noticeBoardVO {
+public class boardVO {
 	
 	private int boardNo;
 	private String boardType;
@@ -15,9 +15,9 @@ public class noticeBoardVO {
 	private String filesPath;
 	private String filesOriginalName;
 	
-	public noticeBoardVO () {}
+	public boardVO () {}
 
-	public noticeBoardVO(int boardNo, String boardType, String writer, String title, String content, int readCount,
+	public boardVO(int boardNo, String boardType, String writer, String title, String content, int readCount,
 			Date regdate, String files, String filesPath, String filesOriginalName) {
 		super();
 		this.boardNo = boardNo;
