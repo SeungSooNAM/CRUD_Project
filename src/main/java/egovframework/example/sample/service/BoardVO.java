@@ -1,9 +1,9 @@
-package com.nam.board.vo;
+package egovframework.example.sample.service;
 
 import java.util.Date;
 
-public class boardVO {
-	
+public class BoardVO {
+
 	private int boardNo;
 	private String boardType;
 	private String writer;
@@ -13,12 +13,12 @@ public class boardVO {
 	private Date regdate;
 	private String files;
 	private String filesPath;
-	private String filesOriginalName;
+	private String fileOriginalName;
 	
-	public boardVO () {}
+	public BoardVO () {}
 
-	public boardVO(int boardNo, String boardType, String writer, String title, String content, int readCount,
-			Date regdate, String files, String filesPath, String filesOriginalName) {
+	public BoardVO(int boardNo, String boardType, String writer, String title, String content, int readCount,
+			Date regdate, String files, String filesPath, String fileOriginalName) {
 		super();
 		this.boardNo = boardNo;
 		this.boardType = boardType;
@@ -29,7 +29,7 @@ public class boardVO {
 		this.regdate = regdate;
 		this.files = files;
 		this.filesPath = filesPath;
-		this.filesOriginalName = filesOriginalName;
+		this.fileOriginalName = fileOriginalName;
 	}
 
 	public int getBoardNo() {
@@ -104,19 +104,19 @@ public class boardVO {
 		this.filesPath = filesPath;
 	}
 
-	public String getFilesOriginalName() {
-		return filesOriginalName;
+	public String getFileOriginalName() {
+		return fileOriginalName;
 	}
 
-	public void setFilesOriginalName(String filesOriginalName) {
-		this.filesOriginalName = filesOriginalName;
+	public void setFileOriginalName(String fileOriginalName) {
+		this.fileOriginalName = fileOriginalName;
 	}
 
 	@Override
 	public String toString() {
-		return "noticeBoardVO [boardNo=" + boardNo + ", boardType=" + boardType + ", writer=" + writer + ", title="
-				+ title + ", content=" + content + ", readCount=" + readCount + ", regdate=" + regdate + ", files="
-				+ files + ", filesPath=" + filesPath + ", filesOriginalName=" + filesOriginalName + "]";
+		return "BoardVO [boardNo=" + boardNo + ", boardType=" + boardType + ", writer=" + writer + ", title=" + title
+				+ ", content=" + content + ", readCount=" + readCount + ", regdate=" + regdate + ", files=" + files
+				+ ", filesPath=" + filesPath + ", fileOriginalName=" + fileOriginalName + "]";
 	}
 	
 }

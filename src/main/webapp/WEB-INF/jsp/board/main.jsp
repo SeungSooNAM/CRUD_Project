@@ -5,12 +5,15 @@
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>board main page</title>
-
+<script type="text/javascript" src="lib/jquery/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="js/board.js"></script>
 </head>
 <body>
-	<h1>Hello world</h1>
-	<div id="area"></div>
+	<h1 align="center">Hello Galley</h1>
+	<div>
+		<div align="center">
+			<div id="area" align="center"></div>
+		</div>
+	</div>
 </body>
 </html>
