@@ -5,16 +5,15 @@ $(document).ready(function() {
 	getList();
 });
 
-/* 로드 작성 */
 function getList() {
 	
-	$("#area").load("board/freeboardList.do");
+	$("#area").load("boardList.do");
 }
 
 function insert() {
-	$("#area").load("board/freeboardWrite.do");
+	$("#area").load("boardInsert.do");
 }
 
 function update() {
-	$("#area").load();
+	$("#area").load("boardUpdate.do");
 }
